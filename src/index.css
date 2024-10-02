@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -18,7 +21,6 @@
     padding: 0;
   }
 header{
-    background-color: rgb(214, 214, 214);
     position: fixed;
     width: 100%;
     display: flex;
@@ -29,7 +31,6 @@ header{
     z-index: 1;
 }
 header a{
-    color: #20d489;
     text-decoration: none;
 }
 .item{
@@ -61,7 +62,6 @@ header a{
     bottom: 20%;
 }
 .contact h1{
-    color: #20d489;
     font-size: 56px;
     padding-bottom: 30px;
 }
@@ -77,8 +77,7 @@ header a{
     padding: 15px;
     border-radius: 20px;
     font-size: 25px;
-    background-color: #20d489;
-    border-color: #20d489;
+   
     cursor: pointer;
 }
 .contact a {

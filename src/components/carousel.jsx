@@ -1,15 +1,15 @@
-import Contact from "./contact";
+import Contact from "./Contact";
 
 function Carousel() {
     return (
-        <div className="item">
+        <div className="item text-black">
             {/* Section image */}
-            <div className="item-img">
+            <div className="item-img  border-4 border-gray border-double p-4 rounded-lg w-1/2">
                 <img src="src/assets/26.webp" alt="Oussama Bouras Image" />
             </div>
 
             {/* Section contenu */}
-            <div className="item-content">
+            <div className="item-content border-4 border-gray border-double p-4 rounded-lg w-1/2 text-center  ">
                 <div className="item-desc">
                     {/* Titre */}
                     <div className="title">

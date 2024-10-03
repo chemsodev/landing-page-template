@@ -4,7 +4,7 @@ function Carousel() {
     return (
         <div className="item text-black">
             {/* Section image */}
-            <div className="item-img  border-4 border-gray border-double p-4 rounded-lg w-1/2">
+            <div className="item-img  border-4 border-gray border-double p-4 rounded-lg w-1/2   ">
                 <img src="src/assets/26.webp" alt="Oussama Bouras Image" />
             </div>
 

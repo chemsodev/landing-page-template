@@ -20,66 +20,10 @@
     margin: 0;
     padding: 0;
   }
-header{
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    height: 80px;
-    font-size: 25px;
-    z-index: 1;
-}
+
 header a{
     text-decoration: none;
 }
-.item{
-    display: flex;
-    height: 100vh;
-    padding: 100px;
-    gap: 200px;
-}
-.item-content{
-    position: relative;
-}
-.item-img img{
-    height: 80%;
-    width: 100%;
-}
-.title h1{
-    font-size: 40px;
-}
-.sub-title{
-    font-size: 16px;
-}
 
 
 
-.contact{
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 20%;
-}
-.contact h1{
-    font-size: 56px;
-    padding-bottom: 30px;
-}
-.buttons{
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-}
-.contact button{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding: 15px;
-    border-radius: 20px;
-    font-size: 25px;
-   
-    cursor: pointer;
-}
-.contact a {
-    text-decoration: none;
-}

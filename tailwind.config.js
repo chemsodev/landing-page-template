@@ -9,7 +9,9 @@ export default {
         'black': '#323039',
         'gray':'#ccbcbc',
         'white':'#ffffff',
-        'blue':'#18C3F8'
+        'blue':'#18C3F8',
+        'green' : '#20d489',
+        'green-act' : '#19b674'
       },
     },
   },

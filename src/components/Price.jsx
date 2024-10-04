@@ -9,13 +9,13 @@ const priceItems = [
 
 const Price = () => {
     return (
-        <div className='m-8'>
-            <p className='font-bold flex justify-center items-center text-5xl'>Prix</p>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
+        <div className='flex flex-col justify-center items-center mt-12'>
+            <p className='font-bold text-center text-5xl'>Prix</p>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl text-center my-12'>
                 {priceItems.map((item, index) => (
                     <div
                         key={index}
-                        className='text-white p-5 flex flex-row justify-between bg-slate-600 mt-12 h-[60px] w-[350px] rounded-xl'
+                        className='text-white p-5 flex flex-row justify-between bg-slate-600 h-[60px] w-[350px] rounded-xl mx-auto'
                     >
                         <p>{item.label}</p>
                         <p className='text-amber-300'>

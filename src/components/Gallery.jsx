@@ -101,7 +101,7 @@ function Gallery() {
 
   return (
     <div>
-      <h2 className="text-center text-2xl font-bold mb-4">Gallery</h2>
+      <h2 className="text-center text-5xl font-bold my-12">Gallery</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[90%] md:w-[80%] mx-auto">
         {visibleSlides.map((slide, index) => (
           <div key={index} className="relative group">

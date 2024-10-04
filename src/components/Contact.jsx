@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Contact (){
 
     return(
-        <div className="contact text-center lg:absolute lg:bottom-0 lg:left-0 lg:right-0  mb-5">
+        <div className="text-center mb-5">
             <h1 className='text-green text-3xl font-bold mt-6 lg:text-[60px]'>Contact me</h1>
             <div className='buttons flex justify-center mt-4 gap-5 lg:mt-12'>
                 <a href="tel:+213541520675">

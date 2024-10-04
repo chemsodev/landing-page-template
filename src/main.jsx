@@ -13,5 +13,6 @@ createRoot(document.getElementById('root')).render(
     <Carousel />
     <Gallery />
     <Price />
+    <Contact/>
   </StrictMode>,
 )

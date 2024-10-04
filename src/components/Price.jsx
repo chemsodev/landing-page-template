@@ -1,5 +1,3 @@
-import React from 'react';
-
 const priceItems = [
     { label: 'Déplacement', price: '1000 DA', unit: '10 KM' },
     { label: 'Devis gratuit', price: '1 DA' },
@@ -13,7 +11,7 @@ const Price = () => {
     return (
         <div className='m-8'>
             <p className='font-bold flex justify-center items-center text-5xl'>Prix</p>
-            <div className='flex flex-col md:grid md:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
                 {priceItems.map((item, index) => (
                     <div
                         key={index}

@@ -3,7 +3,7 @@ import React from 'react'
 const Price = () => {
     return (
         <div className='m-8  '>
-            <p className='font-bold text-5xl'>Prix</p>
+            <p className='font-bold flex justify-center items-center  text-5xl'>Prix</p>
             <div className='flex flex-col md:grid md:grid-cols-3 gap-4'>
                 <div className=' text-white p-5 flex flex-row justify-between bg-slate-600  mt-12 h-[60px] w-[350px] rounded-xl'>
                     <p>Déplacement</p>

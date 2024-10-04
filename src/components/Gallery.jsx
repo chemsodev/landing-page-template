@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -64,32 +64,56 @@ const slides = [
 
 function Gallery() {
   const [open, setOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0); 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [visibleSlidesCount, setVisibleSlidesCount] = useState(getVisibleSlidesCount());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleSlidesCount(getVisibleSlidesCount());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
+  function getVisibleSlidesCount() {
+    if (window.innerWidth >= 1024) {
+      return 8; 
+    } else if (window.innerWidth >= 768) {
+      return 6; 
+    } else {
+      return 4;
+    }
+  }
+
+  const visibleSlides = slides.slice(0, visibleSlidesCount);
+  const remainingCount = slides.length - visibleSlides.length;
+  const showMoreIndex = visibleSlides.length - 1;
 
   const handleThumbnailClick = (index) => {
     setOpen(true);
     setCurrentIndex(index);
   };
 
-  const visibleSlides = slides.slice(0, 8);
-  const remainingCount = slides.length - 8; 
-  const showMoreIndex = 7; 
-
   return (
     <div>
       <h2 className="text-center text-2xl font-bold mb-4">Gallery</h2>
-      <div className="grid grid-cols-4 gap-4 w-[80%] mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[90%] md:w-[80%] mx-auto">
         {visibleSlides.map((slide, index) => (
           <div key={index} className="relative group">
             <img
               src={slide.src}
               alt={`Thumbnail ${index + 1}`}
-              onClick={() => handleThumbnailClick(index)} 
-              className="w-full h-56 object-cover cursor-pointer rounded-lg shadow-md transition-transform transform group-hover:scale-105"
+              onClick={() => handleThumbnailClick(index)}
+              className="w-full h-52 md:h-56 object-cover cursor-pointer rounded-lg shadow-md transition-transform transform group-hover:scale-105"
             />
-            {index === showMoreIndex && (
+            {index === showMoreIndex && remainingCount > 0 && (
               <div
-                onClick={() => handleThumbnailClick(11)}
+                onClick={() => handleThumbnailClick(showMoreIndex + 1)}
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-90 text-white text-3xl font-bold rounded-lg cursor-pointer transition-opacity group-hover:opacity-75 group-hover:scale-105"
               >
                 {`+${remainingCount}`}

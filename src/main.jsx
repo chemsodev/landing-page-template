@@ -6,6 +6,7 @@ import Header from './components/Header.jsx'
 import Gallery from './components/Gallery.jsx'
 import Price from './components/Price.jsx'
 import Contact from './components/Contact.jsx'
+import Footer from './components/footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <Gallery />
     <Price />
     <Contact/>
+    <Footer/>
   </StrictMode>,
 )

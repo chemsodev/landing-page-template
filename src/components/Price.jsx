@@ -11,11 +11,11 @@ const Price = () => {
     return (
         <div className='flex flex-col justify-center items-center mt-12'>
             <p className='font-bold text-center text-5xl'>Prix</p>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl text-center my-12'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 w-full max-w-6xl text-center my-12'>
                 {priceItems.map((item, index) => (
                     <div
                         key={index}
-                        className='text-white p-5 flex flex-row justify-between bg-slate-600 h-[60px] w-[350px] rounded-xl mx-auto'
+                        className='text-white p-5 flex flex-row justify-between hover:scale-105 duration-300 bg-slate-600 h-[60px] w-[350px] rounded-xl mx-auto'
                     >
                         <p>{item.label}</p>
                         <p className='text-amber-300'>

@@ -1,10 +1,12 @@
+import image from "../assets/6.webp";
 import Contact from "./Contact";
 
 function Carousel() {
+
     return (
         <div className="  grid grid-cols-1 md:grid-cols-2  gap-6 w-full rounded-3xl py-12 px-6 h-screen  relative  lg:gap-16 lg:p-20 3xl:h-[70vh]">
             <div className="item-img overflow-hidden hover:scale-105 duration-700 w-full h-96 md:h-auto md:w-auto">
-                <img src="/6.webp" alt="Oussama Bouras Image" className="w-full h-full object-cover rounded-[40px] p-7 "/>
+                <img src={image} alt="Oussama Bouras Image" className="w-full h-full object-cover rounded-[40px] p-7 "/>
             </div>
 
             <div className="item-content lg:relative flex flex-col justify-between">
@@ -36,3 +38,4 @@ function Carousel() {
 }
 
 export default Carousel;
+

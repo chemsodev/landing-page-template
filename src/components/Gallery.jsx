@@ -2,35 +2,64 @@ import React, { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
+import image1 from "../assets/1.webp";
+import image2 from "../assets/2.webp";
+import image3 from "../assets/3.webp";
+import image4 from "../assets/4.webp";
+import image5 from "../assets/5.webp";
+import image6 from "../assets/6.webp";
+import image7 from "../assets/7.webp";
+import image8 from "../assets/8.webp";
+import image9 from "../assets/9.webp";
+import image10 from "../assets/10.webp";
+import image11 from "../assets/11.webp";
+import image12 from "../assets/12.webp";
+import image13 from "../assets/13.webp";
+import image14 from "../assets/14.webp";
+import image15 from "../assets/15.webp";
+import image16 from "../assets/16.webp";
+import image17 from "../assets/17.webp";
+import image18 from "../assets/18.webp";
+import image19 from "../assets/19.webp";
+import image20 from "../assets/20.webp";
+import image21 from "../assets/21.webp";
+import image22 from "../assets/22.webp";
+import image23 from "../assets/23.webp";
+import image24 from "../assets/24.webp";
+import image25 from "../assets/25.webp";
+import image26 from "../assets/26.webp";
+import image27 from "../assets/27.webp";
+import image28 from "../assets/28.webp";
+
 const slides = [
-  { src: "/1.webp" },
-  { src: "/2.webp" },
-  { src: "/3.webp" },
-  { src: "/4.webp" },
-  { src: "/5.webp" },
-  { src: "/6.webp" },
-  { src: "/7.webp" },
-  { src: "/8.webp" },
-  { src: "/9.webp" },
-  { src: "/10.webp" },
-  { src: "/11.webp" },
-  { src: "/12.webp" },
-  { src: "/13.webp" },
-  { src: "/14.webp" },
-  { src: "/15.webp" },
-  { src: "/16.webp" },
-  { src: "/17.webp" },
-  { src: "/18.webp" },
-  { src: "/19.webp" },
-  { src: "/20.webp" },
-  { src: "/21.webp" },
-  { src: "/22.webp" },
-  { src: "/23.webp" },
-  { src: "/24.webp" },
-  { src: "/25.webp" },
-  { src: "/26.webp" },
-  { src: "/27.webp" },
-  { src: "/28.webp" },
+  { src: image1 },
+  { src: image2 },
+  { src: image3 },
+  { src: image4 },
+  { src: image5 },
+  { src: image6 },
+  { src: image7 },
+  { src: image8 },
+  { src: image9 },
+  { src: image10 },
+  { src: image11 },
+  { src: image12 },
+  { src: image13 },
+  { src: image14 },
+  { src: image15 },
+  { src: image16 },
+  { src: image17 },
+  { src: image18 },
+  { src: image19 },
+  { src: image20 },
+  { src: image21 },
+  { src: image22 },
+  { src: image23 },
+  { src: image24 },
+  { src: image25 },
+  { src: image26 },
+  { src: image27 },
+  { src: image28 },
 ];
 
 function Gallery() {
@@ -49,7 +78,6 @@ function Gallery() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
   function getVisibleSlidesCount() {
     if (window.innerWidth >= 1024) {

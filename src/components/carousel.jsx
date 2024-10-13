@@ -28,7 +28,7 @@ function Carousel() {
                 </div>
 
                 <div className="mt-auto mr-auto">
-                    <Contact/>
+                    
                 </div>
             </div>
         </div>

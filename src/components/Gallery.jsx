@@ -71,7 +71,7 @@ function Gallery() {
   };
 
   return (
-    <div className="mt-52 ">
+    <div >
       <h2 className="text-center text-5xl font-bold  mb-12 ">Gallery</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[90%] md:w-[80%] mx-auto">
         {visibleSlides.map((slide, index) => (

@@ -6,7 +6,7 @@ function Carousel() {
     return (
         <div className="  grid grid-cols-1 md:grid-cols-2  gap-6 w-full rounded-3xl p-6 h-[100%] relative md:p-10 lg:mb-10 lg:h-[100vh] lg:gap-12 lg:p-14 3xl:h-[80vh]">
             <div className="item-img overflow-hidden hover:scale-105 duration-700">
-                <img src="/6.webp" alt="Oussama Bouras Image" className="w-full h-80 md:h-full lg:h-full object-cover rounded-[60px] p-2 lg:p-9 "/>
+                <img src={image} alt="Oussama Bouras Image" className="w-full h-80 md:h-full lg:h-full object-cover rounded-[60px] p-2 lg:p-9 "/>
             </div>
 
             <div className="item-content p-2 lg:relative flex flex-col justify-between">

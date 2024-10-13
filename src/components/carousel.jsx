@@ -4,7 +4,7 @@ function Carousel() {
     return (
         <div className="  grid grid-cols-1 md:grid-cols-2  gap-6 w-full rounded-3xl py-12 px-6 h-[100vh]  relative  lg:gap-16 lg:p-20 3xl:h-[70vh]">
             <div className="item-img overflow-hidden hover:scale-105 duration-700">
-                <img src="src/assets/6.webp" alt="Oussama Bouras Image" className="w-full h-full object-cover rounded-[40px] p-7 "/>
+                <img src="/6.webp" alt="Oussama Bouras Image" className="w-full h-full object-cover rounded-[40px] p-7 "/>
             </div>
 
             <div className="item-content lg:relative flex flex-col justify-between">
@@ -14,9 +14,9 @@ function Carousel() {
                     </div>
 
                     <div className="sub-title mb-4 text-lg lg:text-2xl lg:mt-6">
-                        <h4>
+                        <h2>
                         Électricien : Expert en installations et maintenance des systèmes électriques
-                        </h4>
+                        </h2>
                     </div>
 
                     <div>

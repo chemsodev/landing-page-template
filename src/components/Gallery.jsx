@@ -2,64 +2,35 @@ import React, { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import icon from "../assets/1.webp";
-import icon2 from "../assets/2.webp";
-import icon3 from "../assets/3.webp";
-import icon4 from "../assets/3.webp";
-import icon5 from "../assets/5.webp";
-import icon6 from "../assets/6.webp";
-import icon7 from "../assets/7.webp";
-import icon8 from "../assets/8.webp";
-import icon9 from "../assets/9.webp";
-import icon10 from "../assets/10.webp";
-import icon11 from "../assets/11.webp";
-import icon12 from "../assets/12.webp";
-import icon13 from "../assets/13.webp";
-import icon14 from "../assets/14.webp";
-import icon15 from "../assets/15.webp";
-import icon16 from "../assets/16.webp";
-import icon17 from "../assets/17.webp";
-import icon18 from "../assets/18.webp";
-import icon19 from "../assets/19.webp";
-import icon20 from "../assets/20.webp";
-import icon21 from "../assets/21.webp";
-import icon22 from "../assets/22.webp";
-import icon23 from "../assets/23.webp";
-import icon24 from "../assets/24.webp";
-import icon25 from "../assets/25.webp";
-import icon26 from "../assets/26.webp";
-import icon27 from "../assets/27.webp";
-import icon28 from "../assets/28.webp";
-
 const slides = [
-  { src: icon },
-  { src: icon2 },
-  { src: icon3 },
-  { src: icon4 },
-  { src: icon5 },
-  { src: icon6 },
-  { src: icon7 },
-  { src: icon8 },
-  { src: icon9 },
-  { src: icon10 },
-  { src: icon11 },
-  { src: icon12 },
-  { src: icon13 },
-  { src: icon14 },
-  { src: icon15 },
-  { src: icon16 },
-  { src: icon17 },
-  { src: icon18 },
-  { src: icon19 },
-  { src: icon20 },
-  { src: icon21 },
-  { src: icon22 },
-  { src: icon23 },
-  { src: icon24 },
-  { src: icon25 },
-  { src: icon26 },
-  { src: icon27 },
-  { src: icon28 },
+  { src: "/1.webp" },
+  { src: "/2.webp" },
+  { src: "/3.webp" },
+  { src: "/4.webp" },
+  { src: "/5.webp" },
+  { src: "/6.webp" },
+  { src: "/7.webp" },
+  { src: "/8.webp" },
+  { src: "/9.webp" },
+  { src: "/10.webp" },
+  { src: "/11.webp" },
+  { src: "/12.webp" },
+  { src: "/13.webp" },
+  { src: "/14.webp" },
+  { src: "/15.webp" },
+  { src: "/16.webp" },
+  { src: "/17.webp" },
+  { src: "/18.webp" },
+  { src: "/19.webp" },
+  { src: "/20.webp" },
+  { src: "/21.webp" },
+  { src: "/22.webp" },
+  { src: "/23.webp" },
+  { src: "/24.webp" },
+  { src: "/25.webp" },
+  { src: "/26.webp" },
+  { src: "/27.webp" },
+  { src: "/28.webp" },
 ];
 
 function Gallery() {
@@ -101,7 +72,7 @@ function Gallery() {
 
   return (
     <div>
-      <h2 className="text-center text-5xl font-bold my-12">Gallery</h2>
+      <h2 className="text-center text-5xl font-bold md:my-12  mb-12 mt-20">Gallery</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[90%] md:w-[80%] mx-auto">
         {visibleSlides.map((slide, index) => (
           <div key={index} className="relative group">
